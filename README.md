@@ -163,13 +163,13 @@ The AIGeneratePage.tsx animates the LLM’s markdown output with a custom Markdo
 
 ## 🧰 Tech Stack
 
-Layer Tech
-Backend FastAPI, Python 3.12, LangChain
-Providers Amadeus API (pluggable)
-Cache Redis 7 (Docker)
-LLM Groq (Qwen3-32B) / Ollama (local models)
-Frontend React, TypeScript, TailwindCSS
-Infra Docker Compose, .env-based config
+- Layer Tech
+- Backend FastAPI, Python 3.12, LangChain
+- Providers Amadeus API (pluggable)
+- Cache Redis 7 (Docker)
+- LLM Groq (Qwen3-32B) / Ollama (local models)
+- Frontend React, TypeScript, TailwindCSS
+- Infra Docker Compose, .env-based config
 
 ## ⚙️ Setup
 
@@ -221,29 +221,30 @@ awesome — here are two Mermaid diagrams you can drop straight into your README
 
 ```mermaid
 flowchart LR
-  subgraph Client[Frontend (React + Tailwind)]
-    UI[Search Form / AI Generate Page]
+  subgraph Client["Frontend (React + Tailwind)"]
+    UI["Search Form / AI Generate Page"]
   end
 
-  subgraph API[FastAPI Backend]
+  subgraph API["FastAPI Backend"]
     R1[/POST /api/flights/]
     R2[/POST /api/agent/]
-    DEPS[Dependency Injection<br/>get_llm · get_provider · get_service]
-    SVC[SearchFlightsService]
-    AGENT[LangChain Agent + Tool]
-    TOOL[StructuredTool: search_flights]
-    CACHE[Redis Cache<br/>make_key / get / set]
+    DEPS["Dependency Injection<br/>get_llm | get_provider | get_service"]
+    SVC["SearchFlightsService"]
+    AGENT["LangChain Agent + Tool"]
+    TOOL["StructuredTool: search_flights"]
+    CACHE["Redis Cache<br/>make_key / get / set"]
   end
 
-  subgraph Domain[Core Domain]
-    ENT[Entities<br/>FlightQuery · Itinerary · Segment · Money]
+  subgraph Domain["Core Domain"]
+    ENT["Entities<br/>FlightQuery | Itinerary | Segment | Money"]
   end
 
-  subgraph Providers[Providers]
-    AMA[AmadeusClient<br/>(HTTP)]
-    (Other)[…future providers…]
+  subgraph Providers["Providers"]
+    AMA["AmadeusClient<br/>(HTTP)"]
+    OTHER["Other future providers..."]
   end
 
+  %% Flows
   UI -->|JSON body / NL prompt| R1
   UI -->|NL prompt| R2
 
@@ -253,12 +254,13 @@ flowchart LR
   SVC --> AMA
   AMA --> SVC
   SVC --> CACHE
-  R1 --> UI
+  CACHE --> UI
 
   R2 --> DEPS --> AGENT
   AGENT --> TOOL --> SVC
-  R2 --> UI
+  SVC --> UI
 
+  %% Styling
   style CACHE fill:#F0FFF4,stroke:#10B981,stroke-width:1px
   style AGENT fill:#EEF2FF,stroke:#6366F1,stroke-width:1px
   style TOOL fill:#EEF2FF,stroke:#6366F1,stroke-width:1px
