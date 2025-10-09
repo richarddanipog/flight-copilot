@@ -1,0 +1,9 @@
+python-dotenv==1.0.1
+requests==2.32.3
+fastapi
+uvicorn
+redis
+orjson
+langchain_core
+langchain_ollama
+langchain_groq

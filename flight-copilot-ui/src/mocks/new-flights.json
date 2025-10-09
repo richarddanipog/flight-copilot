@@ -1,0 +1,680 @@
+{
+  "options": [
+    {
+      "price": {
+        "amount": 392,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["QS"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T18:25:00",
+        "arrive_utc": "2025-11-15T21:30:00",
+        "duration_min": 185,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T18:25:00",
+            "arrive_utc": "2025-11-15T21:30:00",
+            "carrier": "QS",
+            "flight_number": "1285",
+            "duration_min": 185
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T12:45:00",
+        "arrive_utc": "2025-11-20T17:35:00",
+        "duration_min": 290,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T12:45:00",
+            "arrive_utc": "2025-11-20T17:35:00",
+            "carrier": "QS",
+            "flight_number": "1284",
+            "duration_min": 290
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 458,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["QS"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:35:00",
+        "arrive_utc": "2025-11-15T08:40:00",
+        "duration_min": 185,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T05:35:00",
+            "arrive_utc": "2025-11-15T08:40:00",
+            "carrier": "QS",
+            "flight_number": "1287",
+            "duration_min": 185
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T12:45:00",
+        "arrive_utc": "2025-11-20T17:35:00",
+        "duration_min": 290,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T12:45:00",
+            "arrive_utc": "2025-11-20T17:35:00",
+            "carrier": "QS",
+            "flight_number": "1284",
+            "duration_min": 290
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 458,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["QS"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T18:25:00",
+        "arrive_utc": "2025-11-15T21:30:00",
+        "duration_min": 185,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T18:25:00",
+            "arrive_utc": "2025-11-15T21:30:00",
+            "carrier": "QS",
+            "flight_number": "1285",
+            "duration_min": 185
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T23:45:00",
+        "arrive_utc": "2025-11-21T04:35:00",
+        "duration_min": 290,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T23:45:00",
+            "arrive_utc": "2025-11-21T04:35:00",
+            "carrier": "QS",
+            "flight_number": "1286",
+            "duration_min": 290
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 464,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:20:00",
+        "arrive_utc": "2025-11-15T12:10:00",
+        "duration_min": 410,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T05:20:00",
+            "arrive_utc": "2025-11-15T08:25:00",
+            "carrier": "LO",
+            "flight_number": "152",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T10:50:00",
+            "arrive_utc": "2025-11-15T12:10:00",
+            "carrier": "LO",
+            "flight_number": "527",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 145
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T09:35:00",
+        "arrive_utc": "2025-11-20T18:55:00",
+        "duration_min": 560,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T09:35:00",
+            "arrive_utc": "2025-11-20T10:50:00",
+            "carrier": "LO",
+            "flight_number": "524",
+            "duration_min": 75
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T14:10:00",
+            "arrive_utc": "2025-11-20T18:55:00",
+            "carrier": "LO",
+            "flight_number": "155",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 200
+          }
+        ]
+      }
+    },
+    {
+      "price": {
+        "amount": 464,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:20:00",
+        "arrive_utc": "2025-11-15T17:15:00",
+        "duration_min": 715,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T05:20:00",
+            "arrive_utc": "2025-11-15T08:25:00",
+            "carrier": "LO",
+            "flight_number": "152",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T15:55:00",
+            "arrive_utc": "2025-11-15T17:15:00",
+            "carrier": "LO",
+            "flight_number": "521",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 450
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T09:35:00",
+        "arrive_utc": "2025-11-20T18:55:00",
+        "duration_min": 560,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T09:35:00",
+            "arrive_utc": "2025-11-20T10:50:00",
+            "carrier": "LO",
+            "flight_number": "524",
+            "duration_min": 75
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T14:10:00",
+            "arrive_utc": "2025-11-20T18:55:00",
+            "carrier": "LO",
+            "flight_number": "155",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 200
+          }
+        ]
+      }
+    },
+    {
+      "price": {
+        "amount": 464,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:20:00",
+        "arrive_utc": "2025-11-15T12:10:00",
+        "duration_min": 410,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T05:20:00",
+            "arrive_utc": "2025-11-15T08:25:00",
+            "carrier": "LO",
+            "flight_number": "152",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T10:50:00",
+            "arrive_utc": "2025-11-15T12:10:00",
+            "carrier": "LO",
+            "flight_number": "527",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 145
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T07:15:00",
+        "arrive_utc": "2025-11-20T18:55:00",
+        "duration_min": 700,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T07:15:00",
+            "arrive_utc": "2025-11-20T08:35:00",
+            "carrier": "LO",
+            "flight_number": "530",
+            "duration_min": 80
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T14:10:00",
+            "arrive_utc": "2025-11-20T18:55:00",
+            "carrier": "LO",
+            "flight_number": "155",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 335
+          }
+        ]
+      }
+    },
+    {
+      "price": {
+        "amount": 464,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:20:00",
+        "arrive_utc": "2025-11-15T17:15:00",
+        "duration_min": 715,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T05:20:00",
+            "arrive_utc": "2025-11-15T08:25:00",
+            "carrier": "LO",
+            "flight_number": "152",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T15:55:00",
+            "arrive_utc": "2025-11-15T17:15:00",
+            "carrier": "LO",
+            "flight_number": "521",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 450
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T07:15:00",
+        "arrive_utc": "2025-11-20T18:55:00",
+        "duration_min": 700,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T07:15:00",
+            "arrive_utc": "2025-11-20T08:35:00",
+            "carrier": "LO",
+            "flight_number": "530",
+            "duration_min": 80
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T14:10:00",
+            "arrive_utc": "2025-11-20T18:55:00",
+            "carrier": "LO",
+            "flight_number": "155",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 335
+          }
+        ]
+      }
+    },
+    {
+      "price": {
+        "amount": 499,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:20:00",
+        "arrive_utc": "2025-11-15T12:10:00",
+        "duration_min": 410,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T05:20:00",
+            "arrive_utc": "2025-11-15T08:25:00",
+            "carrier": "LO",
+            "flight_number": "152",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T10:50:00",
+            "arrive_utc": "2025-11-15T12:10:00",
+            "carrier": "LO",
+            "flight_number": "527",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 145
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T19:40:00",
+        "arrive_utc": "2025-11-21T03:45:00",
+        "duration_min": 485,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T19:40:00",
+            "arrive_utc": "2025-11-20T20:55:00",
+            "carrier": "LO",
+            "flight_number": "526",
+            "duration_min": 75
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T23:00:00",
+            "arrive_utc": "2025-11-21T03:45:00",
+            "carrier": "LO",
+            "flight_number": "151",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 125
+          }
+        ]
+      }
+    },
+    {
+      "price": {
+        "amount": 499,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T05:20:00",
+        "arrive_utc": "2025-11-15T17:15:00",
+        "duration_min": 715,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T05:20:00",
+            "arrive_utc": "2025-11-15T08:25:00",
+            "carrier": "LO",
+            "flight_number": "152",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T15:55:00",
+            "arrive_utc": "2025-11-15T17:15:00",
+            "carrier": "LO",
+            "flight_number": "521",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 450
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T19:40:00",
+        "arrive_utc": "2025-11-21T03:45:00",
+        "duration_min": 485,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T19:40:00",
+            "arrive_utc": "2025-11-20T20:55:00",
+            "carrier": "LO",
+            "flight_number": "526",
+            "duration_min": 75
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T23:00:00",
+            "arrive_utc": "2025-11-21T03:45:00",
+            "carrier": "LO",
+            "flight_number": "151",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 125
+          }
+        ]
+      }
+    },
+    {
+      "price": {
+        "amount": 499,
+        "currency": "USD"
+      },
+      "deeplink": null,
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-11-15T11:25:00",
+        "arrive_utc": "2025-11-15T17:15:00",
+        "duration_min": 350,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "WAW",
+            "depart_utc": "2025-11-15T11:25:00",
+            "arrive_utc": "2025-11-15T14:30:00",
+            "carrier": "LO",
+            "flight_number": "156",
+            "duration_min": 185
+          },
+          {
+            "origin": "WAW",
+            "destination": "PRG",
+            "depart_utc": "2025-11-15T15:55:00",
+            "arrive_utc": "2025-11-15T17:15:00",
+            "carrier": "LO",
+            "flight_number": "521",
+            "duration_min": 80
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 85
+          }
+        ]
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-11-20T09:35:00",
+        "arrive_utc": "2025-11-20T18:55:00",
+        "duration_min": 560,
+        "stops": 1,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "WAW",
+            "depart_utc": "2025-11-20T09:35:00",
+            "arrive_utc": "2025-11-20T10:50:00",
+            "carrier": "LO",
+            "flight_number": "524",
+            "duration_min": 75
+          },
+          {
+            "origin": "WAW",
+            "destination": "TLV",
+            "depart_utc": "2025-11-20T14:10:00",
+            "arrive_utc": "2025-11-20T18:55:00",
+            "carrier": "LO",
+            "flight_number": "155",
+            "duration_min": 285
+          }
+        ],
+        "layovers": [
+          {
+            "at": "WAW",
+            "duration_min": 200
+          }
+        ]
+      }
+    }
+  ]
+}
