@@ -4,10 +4,9 @@ from src.config import Settings
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from src.llm.tools.flight_tool import search_flights_tool
 from src.utils.logger import get_logger
-from src.utils.llm import get_chat_prompt_template
-from src.utils.llm import get_llm_model
+from src.utils.llm import get_chat_prompt_template, get_llm_model
 from src.utils.date_guard import validate_dates_in_query, PastDateError
-
+from langchain.memory import ConversationBufferWindowMemory
 
 settings = Settings()
 
@@ -27,9 +26,15 @@ class LLMAgent:
 
         agent = create_tool_calling_agent(
             llm=self.llm, tools=tools, prompt=prompt)
+
+        memory = ConversationBufferWindowMemory(
+            memory_key='chat_history', return_messages=True, input_key='input', output_key='output'
+        )
+
         self.executor = AgentExecutor(
             agent=agent,
             tools=tools,
+            memory=memory,
             verbose=settings.use_verbose,
             return_intermediate_steps=True,
         )
@@ -53,7 +58,7 @@ class LLMAgent:
             raise Exception("Agent failed: %s", e)
 
         steps = result.get("intermediate_steps", [])
-        itineraries = None
+        itineraries = []
         tool_args = {}
         if steps:
             action, observation = steps[-1]

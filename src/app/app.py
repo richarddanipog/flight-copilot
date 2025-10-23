@@ -1,7 +1,8 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from .routers import flights, agent, locations
 from src.infra.airports.airports_loader import load_airports
+from .routers import flights, agent, locations
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI
+
 
 app = FastAPI(title="Flight Copilot API", version="1.0.0")
 

@@ -1,5 +1,4 @@
-from fastapi import APIRouter, HTTPException, Depends
-from src.app.deps import get_flight_provider
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Any, Dict, List
 from src.llm.agent import LLMAgent
@@ -24,7 +23,7 @@ agent = LLMAgent()
 
 
 @router.post("/agent", response_model=AgentResponse)
-def agent_query(body: AgentRequest, provider=Depends(get_flight_provider)) -> AgentResponse:
+def agent_query(body: AgentRequest) -> AgentResponse:
     try:
         options, output = agent.execute(agent=body.query)
         return AgentResponse(options=options, output=output)

@@ -5,8 +5,6 @@ from pydantic import BaseModel, Field, field_validator
 from src.app.deps import get_search_service
 
 from src.core.entities import Airport, FlightQuery
-from src.core.services import SearchFlightsService
-
 from langchain_core.tools import StructuredTool
 
 
@@ -25,6 +23,17 @@ class SearchFlightsInput(BaseModel):
     def upper_iata(cls, v: str) -> str:
         return (v or "").upper()
 
+    @field_validator("date_from", "date_to", "return_date")
+    @classmethod
+    def ensure_current_year(cls, v: Optional[date]) -> Optional[date]:
+        if v is None:
+            return v
+        current_year = date.today().year
+        if v.year != current_year:
+            # Replace with current year, keeping month and day
+            return v.replace(year=current_year)
+        return v
+
     @field_validator("limit", mode="before")
     def _coerce_limit(cls, v):
         if v in (None, "", "null"):
@@ -40,7 +49,7 @@ def search_flights_tool() -> StructuredTool:
     """Return a LangChain StructuredTool bound to the given provider."""
     service = get_search_service()
 
-    def _run(
+    def run(
         origin: str,
         destination: str,
         date_from: date,
@@ -48,7 +57,7 @@ def search_flights_tool() -> StructuredTool:
         return_date: Optional[date] = None,
         nonstop: bool = False,
         max_price: Optional[int] = None,
-        limit: Optional[int] = 5,
+        limit: Optional[int] = 10,
     ) -> List[dict]:
         q = FlightQuery(
             origin=Airport(origin),
@@ -63,7 +72,7 @@ def search_flights_tool() -> StructuredTool:
         return its
 
     return StructuredTool.from_function(
-        func=_run,
+        func=run,
         name="search_flights",
         description="Search flights and return itineraries.",
         args_schema=SearchFlightsInput,

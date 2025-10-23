@@ -10,7 +10,7 @@ const FlightsList = memo(({ flights }: FlightsListProps) => {
   return (
     <div className="pt-2">
       <h3 className="text-lg font-semibold text-slate-800 mb-2">Results</h3>
-      <ul className="space-y-2">
+      <ul className="space-y-2 flex gap-4 overflow-scroll">
         {flights.map((r, idx) => (
           <li key={idx}>
             <FlightResultCard flight={r} />

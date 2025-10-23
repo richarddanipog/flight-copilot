@@ -13,7 +13,7 @@ class FlightProvider(Protocol):
 class SearchFlightsService:
     provider: FlightProvider
 
-    def execute(self, query_or_req: FlightQuery | FlightRequest, limit: int = 5) -> List[Itinerary]:
+    def execute(self, query_or_req: FlightQuery | FlightRequest, limit: int = 10) -> List[Itinerary]:
         if isinstance(query_or_req, FlightRequest):
             from src.utils.flights import init_flight_query
             query = init_flight_query(query_or_req)

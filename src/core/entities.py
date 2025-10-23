@@ -59,12 +59,13 @@ class Segment:  # one flight leg
     arrival_utc: datetime
     carrier: str          # e.g., "LY"
     flight_number: str    # e.g., "LY393"
+    stops: Optional[int] = 0
 
     def __post_init__(self):
         if self.arrival_utc <= self.departure_utc:
             raise ValueError("arrival must be after departure")
-        if not self.carrier or not self.flight_number:
-            raise ValueError("carrier and flight_number are required")
+        if not self.carrier:
+            raise ValueError("carrier are required")
 
 
 @dataclass(frozen=True)

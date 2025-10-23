@@ -10,7 +10,7 @@ type FlightResultCardProps = {
 const FlightResultCard: FC<FlightResultCardProps> = ({ flight }) => {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white shadow-sm p-3 md:p-4">
-      <div className="flex items-center gap-3">
+      <div className="items-center gap-3">
         <div className="flex-3 flex items-center gap-3 h-full">
           <div className="h-[100px] sm:flex justify-center w-24 rounded-xl bg-slate-100 text-slate-600 font-semibold">
             <div className="text-md flex justify-center items-center">
@@ -23,15 +23,15 @@ const FlightResultCard: FC<FlightResultCardProps> = ({ flight }) => {
             </div>
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1 w-60">
             <FlightLeg leg={flight.outbound} />
             <FlightLeg leg={flight.return_} />
           </div>
         </div>
 
-        <div className="hidden md:block col-span-1 h-24 border-l border-slate-200" />
+        <div className="hidden md:block col-span-1 my-3 border-t border-slate-200" />
 
-        <div className="flex-1 ml-auto flex items-center justify-between md:justify-end gap-3">
+        <div className="flex-1 flex items-center justify-between md:justify-end gap-3">
           <div className="text-right">
             <div className="text-slate-900 font-bold text-lg whitespace-nowrap">
               {flight.price.amount}{' '}
@@ -47,7 +47,7 @@ const FlightResultCard: FC<FlightResultCardProps> = ({ flight }) => {
             target="_blank"
             className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
           >
-            Select <ChevronRight className="h-4 w-4" />
+            View Details <ChevronRight className="h-4 w-4" />
           </a>
 
           <button

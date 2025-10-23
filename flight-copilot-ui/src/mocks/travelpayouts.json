@@ -1,0 +1,245 @@
+{
+  "options": [
+    {
+      "price": {
+        "amount": 276,
+        "currency": "USD"
+      },
+      "deeplink": "https://www.aviasales.com/search/TLV2012PRG30121?t=W417662290001766306400001350TLVFCOPRG17671137001767204300001450PRGFRAMXPTLV_e2ff57f59a1f7411955e8199ee3e57ff_22019&search_date=14102025&expected_price_uuid=8d206889-2656-44dd-96df-2a864e81f102&expected_price_source=share&expected_price_currency=usd&expected_price=276&marker=678588",
+      "carriers": ["W4"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-12-20T09:10:00+00:00",
+        "arrive_utc": "2025-12-20T15:05:00+00:00",
+        "duration_min": 355,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-12-20T09:10:00+00:00",
+            "arrive_utc": "2025-12-20T15:05:00+00:00",
+            "carrier": "W4",
+            "flight_number": "6050",
+            "duration_min": 355
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-12-30T15:55:00+00:00",
+        "arrive_utc": "2025-12-30T22:05:00+00:00",
+        "duration_min": 370,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-12-30T15:55:00+00:00",
+            "arrive_utc": "2025-12-30T22:05:00+00:00",
+            "carrier": "W4",
+            "flight_number": "",
+            "duration_min": 370
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 324,
+        "currency": "USD"
+      },
+      "deeplink": "https://www.aviasales.com/search/TLV2012PRG30121?t=W417662326001766309400001340TLVLCATIASAWPRG17671137001767204300001450PRGFRAMXPTLV_9c30316c47577a5f216d24775882ffba_25811&search_date=14102025&expected_price_uuid=8d206889-2656-44dd-96df-2a864e81f102&expected_price_source=share&expected_price_currency=usd&expected_price=324&marker=678588",
+      "carriers": ["W6"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-12-20T10:10:00+00:00",
+        "arrive_utc": "2025-12-20T18:25:00+00:00",
+        "duration_min": 495,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-12-20T10:10:00+00:00",
+            "arrive_utc": "2025-12-20T18:25:00+00:00",
+            "carrier": "W6",
+            "flight_number": "4606",
+            "duration_min": 495
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-12-30T15:55:00+00:00",
+        "arrive_utc": "2025-12-30T22:05:00+00:00",
+        "duration_min": 370,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-12-30T15:55:00+00:00",
+            "arrive_utc": "2025-12-30T22:05:00+00:00",
+            "carrier": "W6",
+            "flight_number": "",
+            "duration_min": 370
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 350,
+        "currency": "USD"
+      },
+      "deeplink": "https://www.aviasales.com/search/TLV2012PRG30121?t=QS17662551001766266500000250TLVPRG17670987001767116100000230PRGTLV_0659ffc54fc9280262b2803b3c9342f8_27920&search_date=14102025&expected_price_uuid=8d206889-2656-44dd-96df-2a864e81f102&expected_price_source=share&expected_price_currency=usd&expected_price=350&marker=678588",
+      "carriers": ["QS"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-12-20T16:25:00+00:00",
+        "arrive_utc": "2025-12-20T20:35:00+00:00",
+        "duration_min": 250,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-12-20T16:25:00+00:00",
+            "arrive_utc": "2025-12-20T20:35:00+00:00",
+            "carrier": "QS",
+            "flight_number": "1285",
+            "duration_min": 250
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-12-30T11:45:00+00:00",
+        "arrive_utc": "2025-12-30T15:35:00+00:00",
+        "duration_min": 230,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-12-30T11:45:00+00:00",
+            "arrive_utc": "2025-12-30T15:35:00+00:00",
+            "carrier": "QS",
+            "flight_number": "",
+            "duration_min": 230
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 351,
+        "currency": "USD"
+      },
+      "deeplink": "https://www.aviasales.com/search/TLV2012PRG30121?t=W417662323001766262600000565TLVMXPPRG17671383001767155700000230PRGTLV_5f07ff8092eaa115a702434f2a6282d0_27983&search_date=14102025&expected_price_uuid=8d206889-2656-44dd-96df-2a864e81f102&expected_price_source=share&expected_price_currency=usd&expected_price=351&marker=678588",
+      "carriers": ["W4"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-12-20T10:05:00+00:00",
+        "arrive_utc": "2025-12-20T16:00:00+00:00",
+        "duration_min": 355,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-12-20T10:05:00+00:00",
+            "arrive_utc": "2025-12-20T16:00:00+00:00",
+            "carrier": "W4",
+            "flight_number": "6406",
+            "duration_min": 355
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-12-30T22:45:00+00:00",
+        "arrive_utc": "2025-12-31T02:35:00+00:00",
+        "duration_min": 230,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-12-30T22:45:00+00:00",
+            "arrive_utc": "2025-12-31T02:35:00+00:00",
+            "carrier": "W4",
+            "flight_number": "",
+            "duration_min": 230
+          }
+        ],
+        "layovers": []
+      }
+    },
+    {
+      "price": {
+        "amount": 367,
+        "currency": "USD"
+      },
+      "deeplink": "https://www.aviasales.com/search/TLV2012PRG30121?t=LO17662275001766319000001585TLVWAWPRG17671233001767210300001390PRGWAWTLV_209ccc23ce3e0ad318a51880fd6630e1_29256&search_date=14102025&expected_price_uuid=8d206889-2656-44dd-96df-2a864e81f102&expected_price_source=share&expected_price_currency=usd&expected_price=367&marker=678588",
+      "carriers": ["LO"],
+      "outbound": {
+        "origin": "TLV",
+        "destination": "PRG",
+        "depart_utc": "2025-12-20T08:45:00+00:00",
+        "arrive_utc": "2025-12-20T14:05:00+00:00",
+        "duration_min": 320,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "TLV",
+            "destination": "PRG",
+            "depart_utc": "2025-12-20T08:45:00+00:00",
+            "arrive_utc": "2025-12-20T14:05:00+00:00",
+            "carrier": "LO",
+            "flight_number": "156",
+            "duration_min": 320
+          }
+        ],
+        "layovers": []
+      },
+      "return_": {
+        "origin": "PRG",
+        "destination": "TLV",
+        "depart_utc": "2025-12-30T18:35:00+00:00",
+        "arrive_utc": "2025-12-30T23:35:00+00:00",
+        "duration_min": 300,
+        "stops": 0,
+        "segments": [
+          {
+            "origin": "PRG",
+            "destination": "TLV",
+            "depart_utc": "2025-12-30T18:35:00+00:00",
+            "arrive_utc": "2025-12-30T23:35:00+00:00",
+            "carrier": "LO",
+            "flight_number": "",
+            "duration_min": 300
+          }
+        ],
+        "layovers": []
+      }
+    }
+  ],
+  "output": "Here are some flight options from Tel Aviv (TLV) to Prague (PRG) for your trip on December 20th, returning on December 30th:\n\n1. **Wizz Air**:\n   - Departure: 10:05 AM TLV\n   - Arrival: 4:00 PM PRG\n   - Return: 10:45 PM PRG (next day)\n   - Price: $367\n\n2. **Ryanair**:\n   - Departure: 8:45 AM TLV\n   - Arrival: 2:05 PM PRG\n   - Return: 6:45 PM PRG (next day)\n   - Price: $351\n\n3. **Wizz Air**:\n   - Departure: 10:05 AM TLV\n   - Arrival: 4:00 PM PRG\n   - Return: 2:45 AM PRG (next day)\n   - Price: $350\n\n4. **Ryanair**:\n   - Departure: 4:25 PM TLV\n   - Arrival: 8:35 PM PRG\n   - Return: 11:45 AM PRG\n   - Price: $350\n\n5. **LOT Polish Airlines**:\n   - Departure: 6:25 AM TLV\n   - Arrival: 9:35 AM PRG\n   - Return: 6:35 PM PRG\n   - Price: $367\n\nThese flights are all direct, with durations ranging from approximately 5 to 8 hours. You can choose based on your preferred travel time and budget!"
+}

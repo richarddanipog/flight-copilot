@@ -18,6 +18,10 @@ class Settings:
     redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
     ttl_sec: int = int(os.getenv("FLIGHT_CACHE_TTL_SEC", "1800"))
 
+    travelpayouts_api_token: str | None = os.getenv("TRAVELPAYOUTS_API_TOKEN")
+    travelpayouts_partner_id: str | None = os.getenv(
+        "TRAVELPAYOUTS_PARTNER_ID")
+
 
 def get_settings() -> Settings:
     return Settings()

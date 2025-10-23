@@ -45,6 +45,7 @@ def _build_leg(leg_segs: List[Segment]) -> dict:
     # per-segment durations
     seg_total = 0
     seg_views = []
+    seg_total_stops = 0
     for s in leg_segs:
         dur = get_time_minutes(s.arrival_utc) - \
             get_time_minutes(s.departure_utc)
@@ -56,8 +57,10 @@ def _build_leg(leg_segs: List[Segment]) -> dict:
             "carrier": s.carrier,
             "flight_number": getattr(s, "flight_number", None),
             "duration_min": dur,
+            "stops": s.stops
         })
         seg_total += dur
+        seg_total_stops += s.stops
 
     # layovers within the leg only
     lay_total = 0
@@ -79,7 +82,7 @@ def _build_leg(leg_segs: List[Segment]) -> dict:
         "depart_utc": depart_utc.isoformat(),
         "arrive_utc": arrive_utc.isoformat(),
         "duration_min": seg_total + lay_total,
-        "stops": max(0, len(leg_segs) - 1),
+        "stops": max(0, seg_total_stops),
         "segments": seg_views,
         "layovers": layovers,
     }

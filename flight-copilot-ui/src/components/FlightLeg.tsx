@@ -51,7 +51,7 @@ const FlightLeg: FC<FlightLegProps> = ({ leg }) => {
     <div className="flex-1 flex flex-col justify-center mt-5">
       <div className="flex items-center gap-3">
         {convertDateTime(leg.depart_utc)}
-        <div className="flex-1 min-w-0">
+        <div className="min-w-0">
           <div className="relative h-px bg-slate-200 w-full">
             <div className="absolute inset-y-0 left-0 right-0 h-px bg-slate-400" />
           </div>
