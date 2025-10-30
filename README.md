@@ -4,7 +4,7 @@ An educational end-to-end project that combines domain-driven design, FastAPI, L
 
 ## 🧠 What is Flight Copilot?
 
-Flight Copilot started as an experiment in bridging structured flight search logic (via APIs like Amadeus) with natural language interaction powered by an LLM.
+Flight Copilot started as an experiment in bridging structured flight search logic (via APIs like Aviasales (Travelpayouts)) with natural language interaction powered by an LLM.
 Over time it grew into a full AI travel assistant with caching, modular provider support, and a web UI.
 
 The idea:
@@ -19,7 +19,7 @@ The project is built around clean layers:
 src/
 ├── app/
 │   ├── app.py                 # FastAPI entry point
-│   ├── deps.py                # Dependency injection (Amadeus, SearchService, LLM)
+│   ├── deps.py                # Dependency injection (Travelpayouts, SearchService, LLM)
 │   └── routers/               # API routes: flights, agent, locations
 │
 ├── core/
@@ -38,7 +38,7 @@ src/
 │   └── prompts/               # Jinja2 / ChatPrompt templates
 │
 ├── providers/
-│   └── amadeus_client.py      # External flight API adapter
+│   └── travelpayouts_client.py      # Aviasales (Travelpayouts) flight API adapter
 │
 ├── utils/
 │   ├── llm.py                 # Singleton LLM instance (Groq/Ollama)
@@ -80,7 +80,7 @@ class FlightProvider(Protocol):
     def search(self, query: FlightQuery, limit: int = 10) -> List[Itinerary]: ...
 ```
 
-This means you can swap AmadeusClient for Skyscanner, Airlabs, or another adapter without touching the rest of the system.
+This means you can swap TravelpayoutsClient for Skyscanner, Airlabs, or another adapter without touching the rest of the system.
 
 ---
 
@@ -165,7 +165,7 @@ The AIGeneratePage.tsx animates the LLM’s markdown output with a custom Markdo
 
 - Layer Tech
 - Backend FastAPI, Python 3.12, LangChain
-- Providers Amadeus API (pluggable)
+- Providers Travelpayouts / Aviasales API (pluggable)
 - Cache Redis 7 (Docker)
 - LLM Groq (Qwen3-32B) / Ollama (local models)
 - Frontend React, TypeScript, TailwindCSS
@@ -181,10 +181,10 @@ pip install -r requirements.txt
 Create a .env file:
 
 ```
-AMADEUS_CLIENT_ID=your_id
-AMADEUS_CLIENT_SECRET=your_secret
-AMADEUS_AUTH_URL=https://test.api.amadeus.com/v1/security/oauth2/token
-AMADEUS_FLIGHTS_URL=https://test.api.amadeus.com/v2/shopping/flight-offers
+TRAVELPAYOUTS_API_URL=https://api.travelpayouts.com/aviasales/v3/prices_for_dates
+TRAVELPAYOUTS_TOKEN=your_token
+TRAVELPAYOUTS_PARTNER_ID=your_partner_id
+CURRENCY=USD
 GROQ_API_KEY=your_key
 MODEL_NAME=qwen/qwen3-32b
 REDIS_URL=redis://localhost:6379
@@ -240,7 +240,7 @@ flowchart LR
   end
 
   subgraph Providers["Providers"]
-    AMA["AmadeusClient<br/>(HTTP)"]
+    AMA["TravelpayoutsClient<br/>(HTTP)"]
     OTHER["Other future providers..."]
   end
 
@@ -275,7 +275,7 @@ participant U as User (React UI)
 participant A as FastAPI /api/flights
 participant C as Redis Cache
 participant S as SearchFlightsService
-participant P as AmadeusClient
+participant P as TravelpayoutsClient
 
 U->>A: POST /api/flights {origin, destination, dates, ...}
 A->>C: GET flights:v1:<hash>
@@ -303,7 +303,7 @@ participant L as LLM (singleton)
 participant X as AgentExecutor
 participant T as search_flights Tool
 participant S as SearchFlightsService
-participant P as AmadeusClient
+participant P as TravelpayoutsClient
 
 U->>AG: "find me a flight from TLV to PRG in mid-nov under $500, 4–6 days"
 AG->>L: build prompt (date rules, IATA rules)
